@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Sairaj%20Narayankar&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Gen%20AI%20%26%20LLM%20Engineer&descSize=18&descAlignY=58&descColor=a0c4ff" width="100%"/>
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6EC6F7&center=true&vCenter=true&width=700&lines=RAG+Pipeline+Developer+%F0%9F%94%97;Multi-Agent+System+Architect+%F0%9F%A4%96;Stable+Diffusion+%26+LLM+Engineer+%F0%9F%A7%A0;Prompt+Engineer+%7C+AI+Automation+Builder+%E2%9A%A1" alt="Typing SVG" /></a>
@@ -11,7 +9,7 @@
 <br/>
 
 <!-- Social Badges -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sairajnarayankar-855043238)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sairaj-narayankar-855043238)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexesriri@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SairajNarayankar)
 ![Profile Views](https://komarev.com/ghpvc/?username=SairajNarayankar&style=for-the-badge&color=6EC6F7)
