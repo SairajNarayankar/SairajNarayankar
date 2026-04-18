@@ -73,53 +73,49 @@ class SairajNarayankar:
 
 ---
 
-## 🚀 Featured Projects
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 [Multi-Agent Productivity System](https://github.com/SairajNarayankar/Multi-Agent)
-> Production-grade multi-agent orchestration with centralised & decentralised modes
-
-**Stack:** `Python` `Flask` `PostgreSQL` `RabbitMQ` `Docker`
-
-- 🗓️ Calendar, Task & Notes agents with LLM routing
-- 🔄 Async message passing via RabbitMQ
-- 🔗 Dual REST API — CRUD + AI chat interface
-- 📦 Fully containerised with Docker
-
-</td>
-<td width="50%">
-
-### 🎨 [Text-to-Image Generation Pipeline](https://github.com/SairajNarayankar/text-to-image-generation-pipeline)
-> End-to-end image synthesis from natural language using Stable Diffusion
-
-**Stack:** `Python` `Stable Diffusion` `Hugging Face Diffusers`
-
-- 🖼️ High-fidelity image generation from text prompts
-- ✍️ Advanced prompt engineering with CFG scale tuning
-- ➖ Negative prompting for fine-grained quality control
-- 🔁 Reusable, modular inference pipeline
-
-</td>
-</tr>
-<tr>
-<td width="50%" colspan="2">
-
-### 📊 [Exploratory Data Analysis Project](https://github.com/SairajNarayankar/Exploratory-Data-Analysis-Project)
-> Comprehensive EDA uncovering patterns, correlations and outliers in real-world data
-
-**Stack:** `Python` `Pandas` `Matplotlib` `Seaborn` `NumPy` `Jupyter`
-
-- 🔍 Statistical analysis — distributions, heatmaps & trend charts
-- 🧹 Data wrangling, cleaning and feature understanding
-- 📖 Structured Jupyter Notebook with narrative-driven insights
-
-</td>
-</tr>
-</table>
-
+## ⚡ Projects
+ 
+```bash
+$ sairaj --list-projects --verbose
+```
+ 
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║  SAIRAJ_OS v1.0  ·  AI Runtime Environment  ·  Mumbai, IN  ·  STATUS: ONLINE  ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+ 
+[PROCESS LIST]  3 services running  ·  0 crashed  ·  uptime: ∞
+ 
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PID: 001  ·  🤖  multi-agent-system                              [RUNNING ✓]  │
+│  ─────────────────────────────────────────────────────────────────────────────  │
+│  ARCH      │  Centralised + Decentralised  ·  Python · Flask · Docker          │
+│  SERVICES  │  PostgreSQL · RabbitMQ (async broker)                             │
+│  AGENTS    │  calendar_agent · task_agent · notes_agent                        │
+│  INTERFACE │  REST API  ·  CRUD endpoints  +  AI chat                         │
+│  REPO      │  github.com/SairajNarayankar/Multi-Agent                         │
+└─────────────────────────────────────────────────────────────────────────────────┘
+ 
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PID: 002  ·  🎨  text-to-image-pipeline                          [RUNNING ✓]  │
+│  ─────────────────────────────────────────────────────────────────────────────  │
+│  MODEL     │  Stable Diffusion  ·  Hugging Face Diffusers                      │
+│  INPUT     │  Natural language prompt  →  512×512 image output                 │
+│  FEATURES  │  CFG scale tuning  ·  negative prompting  ·  modular inference    │
+│  REPO      │  github.com/SairajNarayankar/text-to-image-generation-pipeline    │
+└─────────────────────────────────────────────────────────────────────────────────┘
+ 
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PID: 003  ·  📊  eda-project                                      [RUNNING ✓]  │
+│  ─────────────────────────────────────────────────────────────────────────────  │
+│  RUNTIME   │  Jupyter Notebook  ·  Python · Pandas · Seaborn · Matplotlib      │
+│  OUTPUT    │  heatmaps · distributions · correlation matrices · trend charts   │
+│  INSIGHTS  │  Statistical summaries  ·  data wrangling  ·  outlier detection   │
+│  REPO      │  github.com/SairajNarayankar/Exploratory-Data-Analysis-Project    │
+└─────────────────────────────────────────────────────────────────────────────────┘
+ 
+$ _
+```
 ---
 
 ## 📜 Certifications
