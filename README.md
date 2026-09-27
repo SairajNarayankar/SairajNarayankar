@@ -1,146 +1,238 @@
-## Hi there, Namaste 👋
-
 <div align="center">
 
-
-<!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6EC6F7&center=true&vCenter=true&width=700&lines=RAG+Pipeline+Developer+%F0%9F%94%97;Multi-Agent+System+Architect+%F0%9F%A4%96;Stable+Diffusion+%26+LLM+Engineer+%F0%9F%A7%A0;Prompt+Engineer+%7C+AI+Automation+Builder+%E2%9A%A1" alt="Typing SVG" /></a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sairaj%20Narayankar&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20AI%20Engineer%20%7C%20LLM%20Infrastructure%20%7C%20RAG%20Systems&descAlignY=55&descSize=16"/>
 
 <br/>
 
-<!-- Social Badges -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sairaj-narayankar-855043238)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexesriri@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SairajNarayankar)
-![Profile Views](https://komarev.com/ghpvc/?username=SairajNarayankar&style=for-the-badge&color=6EC6F7)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=6EE7B7&center=true&vCenter=true&width=600&lines=Architecting+Resilient+AI+Backends+%E2%9A%A1;LLM+Metering+%7C+RAG+Pipelines+%7C+Multi-Agent+Loops;Backend+AI+Intern+%40+Flyrank+AI+%F0%9F%9A%80;Mumbai%2C+India+%F0%9F%87%AE%F0%9F%87%B3)](https://git.io/typing-svg)
+
+<br/>
+
+<a href="https://www.linkedin.com/in/sairajnarayankar" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+<a href="https://github.com/SairajNarayankar" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+<img src="https://img.shields.io/badge/Location-Mumbai%2C%20IN-FF6B6B?style=for-the-badge&logo=google-maps&logoColor=white"/>
+<img src="https://img.shields.io/badge/System--Status-200%20OK%20--%20Open%20To%20Work-00C851?style=for-the-badge&logo=checkmarx&logoColor=white"/>
+
+<br/><br/>
 
 </div>
 
 ---
 
-## 🧠 About Me
+## ⚡ System Manifest
 
 ```python
-class SairajNarayankar:
-    def __init__(self):
-        self.role         = "Generative AI & LLM Engineer"
-        self.location     = "Mumbai, Maharashtra, India 🇮🇳"
-        self.focus        = ["RAG Pipelines", "LLM Fine-tuning", "Multi-Agent Systems", "AI Automation"]
-        self.stack        = ["Python", "LangChain", "Hugging Face", "Stable Diffusion", "FastAPI"]
-        self.certifications = ["IBM Gen AI Engineering (in progress)", "Azure Fundamentals AZ-900",
-                               "Google Cloud Gen AI", "Databricks Gen AI Fundamentals"]
-        self.currently_learning = "Advanced LLM Agents · DevOps for AI · Vector Search"
-        self.fun_fact     = "I build AI agents that work while I sleep 🤖"
+from typing import List, Dict, Any
+from pydantic import BaseModel, Field
 
-    def say_hi(self):
-        print("Thanks for dropping by! Let's build something intelligent together. 🚀")
+class BackendAIEngineer(BaseModel):
+    name: str = "Sairaj Narayankar"
+    current_role: str = "Backend AI Engineering Intern @ Flyrank AI"
+    location: str = "Mumbai, India [19.0760° N, 72.8777° E]"
+    education: str = "B.Sc. Information Technology — University of Mumbai"
+    
+    primary_runtime: Dict[str, Any] = {
+        "paradigm": "Async / Event-Driven / Fault-Tolerant",
+        "focus": ["LLM Infrastructure", "Usage Metering Engines", "RAG Pipelines", "Agent Orchestration"],
+        "code_guarantees": ["Idempotency", "Atomic Transactions", "Zero Floating-Point Money Drift"]
+    }
+    
+    active_stack: List[str] = [
+        "FastAPI", "Python 3.11+", "Async PostgreSQL", "SQLAlchemy",
+        "ChromaDB", "Docker Compose", "LangChain/LangGraph", "Stripe CLI"
+    ]
+    
+    async def process_task(self, query: str) -> str:
+        """Ingests requirements, optimizes token efficiency, and ships resilient APIs."""
+        return f"Executing {query} with p99 low-latency and deterministic fallbacks."
 ```
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🏗️ Architectural Topology
 
-### 🤖 AI / Generative AI
+Here is how I design production backend systems for AI-driven workloads:
+
+```mermaid
+graph TD
+    Client[Client / Multi-Tenant Apps] -->|HTTP POST / JSON| Gateway[FastAPI Gateway & Auth]
+    
+    subgraph Core Engine Tier
+        Gateway -->|Idempotency Check| Metering[Usage & Billing Engine]
+        Gateway -->|Vector Query| RAG[Semantic Retrieval Engine]
+    end
+
+    subgraph Data & Persistence Tier
+        Metering -->|Quota Rules & Tokens| Cache[(Redis / Memory Quota)]
+        Metering -->|Atomic Usage Audit| DB[(PostgreSQL + Docker)]
+        RAG -->|Dense Embeddings| Vector[(ChromaDB Vector Store)]
+    end
+
+    subgraph External System Tier
+        Metering -->|Signed Webhooks| Stripe[Stripe API / Billing]
+        RAG -->|Grounded Prompting| LLM[LLM Provider / OpenAI / Anthropic]
+    end
+```
+
+---
+
+## ⚙️ Core System Components
+
+<table>
+<tr>
+<td width="50%">
+
+### 🤖 LLM & Vector Compute
+- **RAG Architecture** — Hybrid dense retrieval (ChromaDB) with TF-IDF/lexical failovers & semantic reranking.
+- **Agent Orchestration** — Tool-calling loops, stateful graphs, and Model Context Protocol (MCP) integrations.
+- **Metering & Quota Enforcers** — Real-time token tracking, input/output/reasoning pricing, and rate limiting.
+
+</td>
+<td width="50%">
+
+### 🛡️ Resilient Backend Engineering
+- **Async API Design** — High-concurrency FastAPI services with Pydantic validation & OpenAPI specs.
+- **Persistence & Migration** — PostgreSQL with async SQLAlchemy ORM and Alembic schema versioning.
+- **Payment & Webhook Security** — Stripe Checkout flows, raw-body HMAC signature validation, and replay protection.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Stack Telemetry
+
+### 01. Artificial Intelligence & Vector Engines
+![Python](https://img.shields.io/badge/Python_3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![Stable Diffusion](https://img.shields.io/badge/Stable%20Diffusion-8B5CF6?style=for-the-badge&logo=stability-ai&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-005BBB?style=for-the-badge&logo=meta&logoColor=white)
+![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-### 🐍 Languages & Frameworks
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+### 02. Async API Tier & Microservices
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy_ORM-D71F00?style=for-the-badge&logo=python&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe_API-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
 
-### 🗄️ Data & Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-### ☁️ Cloud, DevOps & Infra
-![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-### 📊 Data Visualisation
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+### 03. Storage, Containers & Infrastructure
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 
 ---
 
-## ⚡ Projects
- 
-```bash
-$ sairaj --list-projects --verbose
-```
- 
-```
-╔══════════════════════════════════════════════════════════════════════════════════╗
-║  SAIRAJ_OS v1.0  ·  AI Runtime Environment  ·  Mumbai, IN  ·  STATUS: ONLINE  ║
-╚══════════════════════════════════════════════════════════════════════════════════╝
- 
-[PROCESS LIST]  3 services running  ·  0 crashed  ·  uptime: ∞
- 
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│  PID: 001  ·  🤖  multi-agent-system                              [RUNNING ✓]  │
-│  ─────────────────────────────────────────────────────────────────────────────  │
-│  ARCH      │  Centralised + Decentralised  ·  Python · Flask · Docker          │
-│  SERVICES  │  PostgreSQL · RabbitMQ (async broker)                             │
-│  AGENTS    │  calendar_agent · task_agent · notes_agent                        │
-│  INTERFACE │  REST API  ·  CRUD endpoints  +  AI chat                         │
-│  REPO      │  github.com/SairajNarayankar/Multi-Agent                         │
-└─────────────────────────────────────────────────────────────────────────────────┘
- 
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│  PID: 002  ·  🎨  text-to-image-pipeline                          [RUNNING ✓]  │
-│  ─────────────────────────────────────────────────────────────────────────────  │
-│  MODEL     │  Stable Diffusion  ·  Hugging Face Diffusers                      │
-│  INPUT     │  Natural language prompt  →  512×512 image output                 │
-│  FEATURES  │  CFG scale tuning  ·  negative prompting  ·  modular inference    │
-│  REPO      │  github.com/SairajNarayankar/text-to-image-generation-pipeline    │
-└─────────────────────────────────────────────────────────────────────────────────┘
- 
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│  PID: 003  ·  📊  eda-project                                      [RUNNING ✓]  │
-│  ─────────────────────────────────────────────────────────────────────────────  │
-│  RUNTIME   │  Jupyter Notebook  ·  Python · Pandas · Seaborn · Matplotlib      │
-│  OUTPUT    │  heatmaps · distributions · correlation matrices · trend charts   │
-│  INSIGHTS  │  Statistical summaries  ·  data wrangling  ·  outlier detection   │
-│  REPO      │  github.com/SairajNarayankar/Exploratory-Data-Analysis-Project    │
-└─────────────────────────────────────────────────────────────────────────────────┘
- 
-$ _
-```
----
+## 📦 Featured Production Systems
 
-## 📜 Certifications
+<table>
+<tr>
+<td width="50%">
 
-| 🏅 Certification | 🏢 Issuer |
-|---|---|
-| IBM Generative AI Engineering Professional Certificate *(In Progress)* | IBM |
-| Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft |
-| Generative AI Fundamentals Accreditation | Databricks |
-| Introduction to Generative AI Learning Path | Google Cloud |
-| DevOps Fundamentals | IBM |
-| Data Analytics Job Simulation | Deloitte Australia |
-| Data Analytics Job Simulation | Quantium |
+### ⚡ LLM Usage Metering & Billing Engine
+**FlyRank AI Internship Capstone — Backend Track**
+
+Production-grade metering middleware and subscription billing service for SaaS AI platforms.
+
+```yaml
+guarantees:
+  idempotency: Exactly-once usage event recording via unique keys
+  pricing_model: Independent token tiers (Cached input / Output / Reasoning)
+  quota_protection: HTTP 429 (Limit Exceeded) & HTTP 402 (Payment Required)
+  currency_precision: Integer-cent integer math (Zero floating-point drift)
+  security: Stripe HMAC signature verification & webhook replay defense
+```
+
+**Stack:** `FastAPI` `PostgreSQL` `SQLAlchemy` `Alembic` `Stripe CLI` `Docker` `pytest`
+
+[![Repository](https://img.shields.io/badge/View_Source_Code-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SairajNarayankar/LLM-Usage-Metering-billing-Service)
+
+</td>
+<td width="50%">
+
+### 🔍 Cricket AI Predictive Engine & Hybrid RAG
+**End-to-End Predictive & Semantic Retrieval System**
+
+Complete pipeline integrating automated match scraping, ML inference, and dual-engine RAG search.
+
+```yaml
+metrics:
+  classifier: Random Forest (Match outcome prediction)
+  accuracy: 80.00%
+  f1_score: 0.8571
+guarantees:
+  data_integrity: Strict chronological feature engineering (Zero data leakage)
+  retrieval_failover: ChromaDB dense vector search with TF-IDF fallback
+```
+
+**Stack:** `Python` `scikit-learn` `ChromaDB` `SentenceTransformers` `BeautifulSoup` `pandas`
+
+</td>
+</tr>
+</table>
 
 ---
+
+## 🎓 Verified Credentials
 
 <div align="center">
 
-### 💬 Let's Connect & Build Something Intelligent
+| System Certification | Issuing Organization | Year |
+|----------------------|----------------------|------|
+| 🏅 **Generative AI Engineering Professional Certificate** | IBM | 2026 |
+| ☁️ **Microsoft Azure Fundamentals (AZ-900)** | Microsoft | 2025 |
+| 🌏 **Google Cloud Gen AI Academy — APAC Cohort 1** | Google Cloud | 2026 |
 
-*"The best way to predict the future is to build it — with AI."*
+</div>
 
-[![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sairaj-narayankar-855043238)
-[![Email](https://img.shields.io/badge/Drop%20a%20Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexesriri@gmail.com)
+---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+## 📊 System Metrics & Activity
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SairajNarayankar&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SairajNarayankar&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=SairajNarayankar&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak"/>
+
+</div>
+
+---
+
+## 🔄 Active Worker Threads
+
+```syslog
+[RUNNING]  Implementing Model Context Protocol (MCP) server & tool integrations
+[RUNNING]  Evaluating LangGraph multi-agent orchestration and loop persistence
+[QUEUED]   Building automated LLM observability & token tracing pipelines
+[QUEUED]   Refining case-study engineering write-ups for production AI systems
+```
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+Interested in **AI Infrastructure, RAG Systems, Multi-Agent Architectures**, or **High-Concurrency Backends**? Let's connect and build something resilient.
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sairajnarayankar)
+[![GitHub](https://img.shields.io/badge/Follow_on_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SairajNarayankar)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
 
 </div>
